@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Horus — forwarding…</title>
+<style>body{font:16px system-ui;margin:3rem;color:#222}a{color:#5b5bd6}</style>
+<p>Forwarding you to Horus… <a id="l" href="url.txt">If nothing happens, tap here.</a></p>
+<script>
+fetch('url.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{const u=t.trim();if(/^https?:\/\//.test(u)){document.getElementById('l').href=u;location.replace(u);}});
+</script>
